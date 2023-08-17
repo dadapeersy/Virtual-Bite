@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 4000;
 
 app.use(express.json());
 app.use(cors({
-    origin: ["http://localhost:3000", "https://virtual-bite-client.vercel.app"],
+    origin: ["http://localhost:3000", "https://virtual-bite.vercel.app"],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     allowedHeaders: ["Origin", "X-Requested-With", "Content-Type", "Accept", "Authorization"]

@@ -42,6 +42,7 @@ const Auth = () => {
                             className="form-control"
                             id="exampleInputEmail1"
                             value={username}
+                            required={true}
                             onChange={(event) => setUsername(event.target.value)}
                         />
                     </div>
@@ -55,6 +56,7 @@ const Auth = () => {
                             className="form-control"
                             id="exampleInputPassword1"
                             value={password}
+                            required={true}
                             onChange={(event) => setPassword(event.target.value)}
                         />
                     </div>

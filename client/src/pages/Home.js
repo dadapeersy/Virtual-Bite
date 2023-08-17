@@ -70,7 +70,7 @@ const Home = () => {
     };
     useEffect(() => {
         const filteredRecipes = recipes.filter((recipe) =>
-            recipe?.name?.toLowerCase().includes(search),
+            recipe?.name?.toLowerCase().includes(search.toLowerCase()),
         );
         setFilteredRecipes(search === "" ? recipes : filteredRecipes);
     }, [search, recipes]);

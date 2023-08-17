@@ -18,7 +18,7 @@ const Profile = () => {
         if (userID) {
             try {
                 const response = await axios.get(
-                    `https://virtual-bite.vercel.app/profile/${userID}`,{
+                    `https://virtual-bite-server.vercel.app/profile/${userID}`,{
                         withCredentials: true,
                     }
                 );
@@ -38,7 +38,7 @@ const Profile = () => {
     const deleteRecipes = async () => {
         try {
             const response = await axios.delete(
-                `https://virtual-bite.vercel.app/profile/${recipeID}`, {
+                `https://virtual-bite-server.vercel.app/profile/${recipeID}`, {
                     withCredentials: true,
                 }
             );

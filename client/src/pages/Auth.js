@@ -95,7 +95,7 @@ const Auth = () => {
             event.preventDefault();
             setLoader(true)
             try {
-                const response = await axios.post("https://virtual-bite.vercel.app/auth/login", {
+                const response = await axios.post("https://virtual-bite-server.vercel.app/auth/login", {
                     username: username,
                     password: password,
                 }, {
@@ -139,7 +139,7 @@ const Auth = () => {
             event.preventDefault();
             setLoader(true)
             try {
-                const response = await axios.post("https://virtual-bite.vercel.app/auth/signup", {
+                const response = await axios.post("https://virtual-bite-server.vercel.app/auth/signup", {
                     username,
                     password,
                 }, {

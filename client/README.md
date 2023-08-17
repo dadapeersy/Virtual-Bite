@@ -1,11 +1,11 @@
 # Virtual Bite
 
-Food Recipe Blog.
+Food Recipe Website.
 
 ## Frontend
 
 React.JS, Bootstrap
 
 ## Backend
-Node.JS, Express.JS
+Node.JS, Express.JS, MongoDB
 

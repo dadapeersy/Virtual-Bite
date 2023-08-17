@@ -27,7 +27,7 @@ const CreateRecipe = () => {
             if (userID) {
                 try {
                     const response = await axios.get(
-                        `https://virtual-bite.vercel.app/profile/${userID}`, {
+                        `https://virtual-bite-server.vercel.app/profile/${userID}`, {
                             withCredentials: true,
                         }
                     );
@@ -66,7 +66,7 @@ const CreateRecipe = () => {
         event.preventDefault();
         if (!userID) navigate("/auth");
         try {
-            await axios.post("https://virtual-bite.vercel.app/recipes", recipe,
+            await axios.post("https://virtual-bite-server.vercel.app/recipes", recipe,
                 {
                     headers: {
                         Authorization: cookies.access_token

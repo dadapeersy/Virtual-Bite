@@ -17,7 +17,7 @@ const Home = () => {
     useEffect(() => {
         const fetchRecipes = async () => {
             try {
-                const response = await axios.get("https://virtual-bite.vercel.app/recipes", {
+                const response = await axios.get("https://virtual-bite-server.vercel.app/recipes", {
                     withCredentials: true,
                 });
                 setRecipes(response.data);
@@ -29,7 +29,7 @@ const Home = () => {
         const fetchSavedRecipes = async () => {
             try {
                 const response = await axios.get(
-                    `https://virtual-bite.vercel.app/recipes/savedRecipes/${userID}`, {
+                    `https://virtual-bite-server.vercel.app/recipes/savedRecipes/${userID}`, {
                         withCredentials: true,
                     }
                 );
@@ -46,7 +46,7 @@ const Home = () => {
         if (!userID) navigate("/auth");
         try {
             const response = await axios.put(
-                    "https://virtual-bite.vercel.app/recipes",
+                    "https://virtual-bite-server.vercel.app/recipes",
                     {
                         recipeID,
                         userID,

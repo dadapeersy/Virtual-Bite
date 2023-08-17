@@ -17,7 +17,7 @@ const SavedRecipe = () => {
             setLoader(true)
             try {
                 const response = await axios.get(
-                    `https://virtual-bite.vercel.app/recipes/savedRecipes/${userID}`, {
+                    `https://virtual-bite-server.vercel.app/recipes/savedRecipes/${userID}`, {
                         withCredentials: true,
                     }
                 );
@@ -33,7 +33,7 @@ const SavedRecipe = () => {
     const removeRecipe = async (recipeID) => {
         try {
             const response = await axios.put(
-                "https://virtual-bite.vercel.app/recipes/removeSavedRecipe",
+                "https://virtual-bite-server.vercel.app/recipes/removeSavedRecipe",
                 {
                     recipeID,
                     userID,

@@ -1,6 +1,8 @@
 # Virtual Bite - Food Recipe Website 
 [Virtual Bite](https://virtual-bite.vercel.app/)
 
+![vitual Bite Homepage](https://i.postimg.cc/kgy0v2bP/image.png)
+
 Virtual Bite is a MERN stack (MongoDB, Express.js, React, Node.js) based food recipe website that allows users to
 discover, save a wide variety of delicious recipes from around the world. With an intuitive user interface
 and powerful features, Virtual Bite makes it easy to explore culinary delights and experiment with new dishes right from
